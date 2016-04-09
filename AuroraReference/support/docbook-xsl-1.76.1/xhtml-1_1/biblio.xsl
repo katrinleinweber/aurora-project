@@ -808,7 +808,7 @@
 <xsl:template match="biblioid[@class='doi']" mode="bibliography.mode">
   <span>
     <xsl:call-template name="common.html.attributes"/>
-    <a href="{concat('http://dx.doi.org/', .)}">doi:<xsl:value-of select="."/></a>
+    <a href="{concat('https://doi.org/', .)}">doi:<xsl:value-of select="."/></a>
   </span>
 </xsl:template>
 
@@ -1231,7 +1231,7 @@
 <xsl:template match="biblioid[@class='doi']" mode="bibliomixed.mode">
   <span>
     <xsl:call-template name="common.html.attributes"/>
-    <a href="{concat('http://dx.doi.org/', .)}">doi:<xsl:value-of select="."/></a>
+    <a href="{concat('https://doi.org/', .)}">doi:<xsl:value-of select="."/></a>
   </span>
 </xsl:template>
 
